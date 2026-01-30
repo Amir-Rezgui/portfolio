@@ -1,0 +1,102 @@
+.skills {
+  padding: 120px 2rem;
+  background: #050505;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.9rem;
+  color: #00ff88;
+  font-family: 'Courier New', monospace;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1em;
+}
+
+.sectionTitle {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+.gradient {
+  background: linear-gradient(135deg, #00ff88 0%, #00d4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.categoryCard {
+  background: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.categoryCard:hover {
+  border-color: #333;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.icon {
+  font-size: 1.75rem;
+}
+
+.categoryTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.skillTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skillTag {
+  padding: 0.5rem 1rem;
+  background: #111;
+  border: 1px solid #222;
+  color: #aaa;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.skillTag:hover {
+  background: #1a1a1a;
+  border-color: #00ff88;
+  color: #00ff88;
+}
+
+@media (max-width: 600px) {
+  .skillsGrid {
+    grid-template-columns: 1fr;
+  }
+}

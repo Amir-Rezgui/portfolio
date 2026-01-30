@@ -1,0 +1,134 @@
+.certifications {
+  padding: 120px 5vw;
+  background-color: #000;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 80px;
+}
+
+.label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  color: #00ff88;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.sectionTitle {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.gradient {
+  background: linear-gradient(135deg, #00ff88 0%, #00ffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.certsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+.certCard {
+  display: flex;
+  align-items: center;
+  background: #111;
+  border: 1px solid #222;
+  border-left: 3px solid #00ff88;
+  padding: 24px 28px;
+  transition: all 0.3s ease;
+}
+
+.certCard:hover {
+  border-color: #00ff88;
+  transform: translateY(-2px);
+  background: rgba(0, 255, 136, 0.03);
+}
+
+.certInfo {
+  flex: 1;
+}
+
+.certTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 8px 0;
+  line-height: 1.3;
+}
+
+.certIssuer {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.languagesSection {
+  border-top: 1px solid #222;
+  padding-top: 60px;
+}
+
+.langTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 32px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.langGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.langCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  border: 1px solid #222;
+  padding: 20px 24px;
+}
+
+.langName {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.langLevel {
+  font-size: 14px;
+  color: #00ff88;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+@media (max-width: 768px) {
+  .certifications {
+    padding: 80px 5vw;
+  }
+  
+  .certsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .langGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

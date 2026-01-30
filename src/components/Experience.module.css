@@ -1,0 +1,164 @@
+.experience {
+  padding: 120px 2rem;
+  background: #050505;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 4rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.9rem;
+  color: #00ff88;
+  font-family: 'Courier New', monospace;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1em;
+}
+
+.sectionTitle {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+.gradient {
+  background: linear-gradient(135deg, #00ff88 0%, #00d4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.timelineItem {
+  display: grid;
+  grid-template-columns: 200px 60px 1fr;
+  gap: 0;
+  min-height: 250px;
+}
+
+.timelineLeft {
+  text-align: right;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+}
+
+.period {
+  display: block;
+  font-size: 0.9rem;
+  color: #888;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.impact {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: #00ff88;
+  background: rgba(0, 255, 136, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 100px;
+  margin-top: 0.5rem;
+}
+
+.timelineMarker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.markerDot {
+  width: 16px;
+  height: 16px;
+  background: #00ff88;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+  flex-shrink: 0;
+}
+
+.markerLine {
+  width: 2px;
+  flex: 1;
+  background: linear-gradient(180deg, #00ff88, #111);
+}
+
+.timelineItem:last-child .markerLine {
+  display: none;
+}
+
+.timelineContent {
+  background: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.timelineContent:hover {
+  border-color: #00ff88;
+  transform: translateX(10px);
+}
+
+.contentHeader {
+  margin-bottom: 1rem;
+}
+
+.role {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.company {
+  font-size: 1.1rem;
+  color: #00ff88;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 1rem;
+  color: #888;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech {
+  padding: 0.35rem 0.75rem;
+  background: #111;
+  border: 1px solid #222;
+  color: #aaa;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .timelineItem {
+    grid-template-columns: 40px 1fr;
+  }
+  
+  .timelineLeft {
+    display: none;
+  }
+  
+  .timelineContent {
+    margin-bottom: 1.5rem;
+  }
+}
