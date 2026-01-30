@@ -110,69 +110,31 @@
 .expertiseGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 16px;
 }
 
 .expertiseCard {
-  background: linear-gradient(135deg, #0a0a0a 0%, #111 100%);
-  border: 1px solid #1a1a1a;
-  padding: 2rem;
-  transition: all 0.4s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.expertiseCard::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, #00ff88, #00d4ff);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.4s ease;
+  background: transparent;
+  border-left: 2px solid #222;
+  padding: 1.5rem 0 1.5rem 1.5rem;
+  transition: all 0.3s ease;
 }
 
 .expertiseCard:hover {
-  border-color: #333;
-  transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-}
-
-.expertiseCard:hover::before {
-  transform: scaleX(1);
-}
-
-.expertiseNum {
-  font-size: 2.5rem;
-  font-weight: 900;
-  color: #1a1a1a;
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  line-height: 1;
-  transition: color 0.3s ease;
-}
-
-.expertiseCard:hover .expertiseNum {
-  color: rgba(0, 255, 136, 0.15);
+  border-left-color: #00ff88;
 }
 
 .expertiseTitle {
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 600;
   color: #fff;
-  margin-bottom: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
+  margin-bottom: 0.5rem;
 }
 
 .expertiseDesc {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #666;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .metrics {
