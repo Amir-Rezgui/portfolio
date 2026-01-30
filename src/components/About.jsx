@@ -2,10 +2,10 @@ import styles from './About.module.css';
 
 const About = () => {
   const expertise = [
-    { icon: '🌐', title: 'Full-Stack Dev', desc: 'React, Spring Boot, PHP, REST APIs' },
-    { icon: '📱', title: 'Mobile Dev', desc: 'Flutter, Firebase, Cross-platform apps' },
-    { icon: '🤖', title: 'AI & Data', desc: 'Python, Scikit-learn, Algorithms' },
-    { icon: '🗄️', title: 'Databases', desc: 'MySQL, Oracle, PostgreSQL, Firebase' },
+    { title: 'Full-Stack Dev', desc: 'React, Spring Boot, PHP, REST APIs' },
+    { title: 'Mobile Dev', desc: 'Flutter, Firebase, Cross-platform apps' },
+    { title: 'AI & Data', desc: 'Python, Scikit-learn, Algorithms' },
+    { title: 'Databases', desc: 'MySQL, Oracle, PostgreSQL, Firebase' },
   ];
 
   return (
@@ -53,7 +53,6 @@ const About = () => {
           <div className={styles.expertiseGrid}>
             {expertise.map((item, index) => (
               <div key={index} className={styles.expertiseCard}>
-                <span className={styles.expertiseIcon}>{item.icon}</span>
                 <h3 className={styles.expertiseTitle}>{item.title}</h3>
                 <p className={styles.expertiseDesc}>{item.desc}</p>
               </div>
