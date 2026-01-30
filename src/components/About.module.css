@@ -110,39 +110,49 @@
 .expertiseGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  gap: 1px;
+  background: #222;
+  border: 1px solid #222;
 }
 
 .expertiseCard {
   background: #0a0a0a;
-  border: 1px solid #1a1a1a;
   padding: 2rem;
   transition: all 0.3s ease;
+  position: relative;
+}
+
+.expertiseCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 0;
+  background: #00ff88;
+  transition: height 0.3s ease;
 }
 
 .expertiseCard:hover {
-  border-color: #00ff88;
-  transform: translateY(-5px);
+  background: #111;
 }
 
-.expertiseIcon {
-  font-size: 2rem;
-  display: block;
-  margin-bottom: 1rem;
+.expertiseCard:hover::before {
+  height: 100%;
 }
 
 .expertiseTitle {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #fff;
-  margin-bottom: 0.5rem;
+  color: #00ff88;
+  margin-bottom: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
 .expertiseDesc {
   font-size: 0.9rem;
-  color: #666;
+  color: #888;
   line-height: 1.6;
 }
 
