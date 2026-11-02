@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5F5EC" />
+      <stop offset="100%" stop-color="#EBEBDB" />
+    </linearGradient>
+    <linearGradient id="badge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#465220" />
+      <stop offset="100%" stop-color="#5E6E2A" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect x="80" y="80" width="1040" height="470" rx="24" fill="#FCFCF6" stroke="#DCDCC5" stroke-width="2" />
+  
+  <!-- Accent badge -->
+  <rect x="140" y="140" width="280" height="38" rx="19" fill="#E7E8CF" />
+  <text x="280" y="164" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="600" fill="#5E6E2A" text-anchor="middle" letter-spacing="1.5">SOFTWARE ENGINEER · ISI</text>
+  
+  <!-- Name -->
+  <text x="140" y="260" font-family="'Space Grotesk', system-ui, sans-serif" font-size="72" font-weight="700" fill="#222417">Amir <tspan fill="#5E6E2A">Rezgui</tspan></text>
+  
+  <!-- Subtitle -->
+  <text x="140" y="325" font-family="'Space Grotesk', system-ui, sans-serif" font-size="28" font-weight="500" fill="#565941">Full-Stack Developer · Applied AI &amp; Cloud</text>
+  
+  <!-- Stack chips -->
+  <text x="140" y="420" font-family="'JetBrains Mono', monospace" font-size="18" fill="#6D6F56">React · TypeScript · Node.js · Spring Boot · Flutter · Mistral AI</text>
+  <text x="140" y="480" font-family="'JetBrains Mono', monospace" font-size="16" fill="#5E6E2A" font-weight="600">amir-rezgui.github.io · Ariana, Tunisia</text>
+</svg>
+

@@ -1,40 +1,43 @@
-import { useEffect } from 'react';
+import { ThemeProvider } from './components/ThemeContext';
+import { LangProvider } from './components/LangContext';
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import About from './components/About';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
+import ProjectsSection from './components/ProjectsSection';
+import Timeline from './components/Timeline';
 import Skills from './components/Skills';
-import Certifications from './components/Certifications';
+import Beyond from './components/Beyond';
 import Contact from './components/Contact';
+import ChatWidget from './components/ChatWidget';
 import Footer from './components/Footer';
-import './App.css';
+import { useScrollReveal } from './components/useScrollReveal';
 
-function App() {
-  useEffect(() => {
-    // Smooth scroll behavior
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
-    });
-  }, []);
+function MainContent() {
+  useScrollReveal();
 
   return (
-    <div className="app">
-      <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Skills />
-      <Certifications />
-      <Contact />
+    <div className="min-h-screen bg-bg text-ink font-sans transition-colors duration-300 selection:bg-accent-soft selection:text-ink">
+      <Navbar />
+      <main>
+        <Hero />
+        <ProjectsSection />
+        <Timeline />
+        <Skills />
+        <Beyond />
+        <Contact />
+      </main>
+      {/* ChatWidget hidden for now */}
+      {/* <ChatWidget /> */}
       <Footer />
     </div>
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <ThemeProvider>
+      <LangProvider>
+        <MainContent />
+      </LangProvider>
+    </ThemeProvider>
+  );
+}

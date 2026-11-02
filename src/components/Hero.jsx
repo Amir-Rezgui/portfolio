@@ -1,82 +1,78 @@
-import styles from './Hero.module.css';
+import { useLang } from './LangContext';
 
 const Hero = () => {
+  const { t } = useLang();
+  const h = t.hero;
+
   return (
-    <section id="home" className={styles.hero}>
-      <div className={styles.gridOverlay}></div>
-      <div className={styles.content}>
-        <div className={styles.statusBadge}>
-          <span className={styles.pulse}></span>
-          Open for Internship & Opportunities
-        </div>
-        
-        <h1 className={styles.name}>
-          <span className={styles.firstName}>AMIR</span>
-          <span className={styles.lastName}>BEN REZGUI</span>
-        </h1>
-        
-        <div className={styles.titleWrapper}>
-          <span className={styles.titleLine}></span>
-          <h2 className={styles.title}>SOFTWARE ENGINEER</h2>
-          <span className={styles.titleLine}></span>
-        </div>
+    <header className="py-16 md:py-20" id="top">
+      <div className="max-w-[1120px] mx-auto px-6">
+        {/* Text side */}
+        <div className="reveal max-w-[680px]">
+          <span className="inline-block font-mono text-[.76rem] font-medium tracking-[.06em] text-accent uppercase mb-2">
+            {h.eyebrow}
+          </span>
+          <h1 className="text-[clamp(2.6rem,5.5vw,4.2rem)] font-bold tracking-tight my-2">
+            {h.name.first} <span className="text-accent">{h.name.last}</span>
+          </h1>
+          <p className="text-[clamp(1.1rem,1.8vw,1.3rem)] text-ink font-medium leading-[1.4] mb-3.5 max-w-[42ch] font-display">
+            {h.tagline}
+          </p>
+          <p className="text-[.96rem] text-ink-soft max-w-[48ch] mb-6 leading-[1.6]">
+            {h.paragraph}
+          </p>
 
-        <p className={styles.tagline}>
-          Building intelligent, full-stack solutions that make an impact.
-          <br />
-          <span className={styles.highlight}>Graduating 2027</span> • ISI Tunisia • AI & Web Enthusiast
-        </p>
-
-        <div className={styles.stats}>
-          <div className={styles.stat}>
-            <span className={styles.statNumber}>2</span>
-            <span className={styles.statLabel}>Internships</span>
+          {/* Facts box */}
+          <div className="border border-border rounded-[12px] bg-surface px-4.5 py-3 mb-7 max-w-[460px] shadow-sm">
+            {h.facts.map((fact, i) => (
+              <div
+                key={i}
+                className={`flex gap-3 font-mono text-[.82rem] py-2 items-baseline ${
+                  i < h.facts.length - 1 ? 'border-b border-dashed border-border' : ''
+                }`}
+              >
+                <span className="text-accent min-w-[75px] font-semibold uppercase text-[.74rem] tracking-wider">
+                  {fact.key}
+                </span>
+                <span className="text-ink-soft flex-1">{fact.value}</span>
+              </div>
+            ))}
           </div>
-          <div className={styles.statDivider}></div>
-          <div className={styles.stat}>
-            <span className={styles.statNumber}>6+</span>
-            <span className={styles.statLabel}>Projects Built</span>
-          </div>
-          <div className={styles.statDivider}></div>
-          <div className={styles.stat}>
-            <span className={styles.statNumber}>7</span>
-            <span className={styles.statLabel}>Certifications</span>
-          </div>
-        </div>
 
-        <div className={styles.cta}>
-          <a href="#contact" className={styles.primaryBtn}>
-            HIRE ME
-          </a>
-          <a href="#projects" className={styles.secondaryBtn}>
-            VIEW PROJECTS
-          </a>
-        </div>
-
-        <div className={styles.socials}>
-          <a href="https://github.com/amirrezgui" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
-            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
-              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-            </svg>
-          </a>
-          <a href="https://linkedin.com/in/amir-rezgui" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
-            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
-              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-            </svg>
-          </a>
-          <a href="mailto:amir.benrezgui@etudiant-isi.utm.tn" className={styles.socialLink}>
-            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
-              <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
-            </svg>
-          </a>
+          {/* CTAs */}
+          <div className="flex gap-3.5 flex-wrap items-center">
+            <a
+              href="#projects"
+              className="inline-flex items-center gap-2 font-sans font-semibold text-[.92rem] px-5 py-2.5 rounded-full bg-accent text-on-accent cursor-pointer transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
+              style={{
+                boxShadow: 'var(--shadow-card)',
+                backgroundColor: 'var(--color-accent)',
+                color: 'var(--color-on-accent)',
+              }}
+            >
+              {h.ctaPrimary}
+              <svg
+                className="w-4 h-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M5 12h14m-7-7l7 7-7 7" />
+              </svg>
+            </a>
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 font-sans font-semibold text-[.92rem] px-5 py-2.5 rounded-full bg-transparent text-ink border border-border cursor-pointer transition-all duration-200 hover:-translate-y-0.5 hover:border-accent hover:text-accent"
+            >
+              {h.ctaSecondary}
+            </a>
+          </div>
         </div>
       </div>
-
-      <div className={styles.scrollIndicator}>
-        <span>SCROLL</span>
-        <div className={styles.scrollLine}></div>
-      </div>
-    </section>
+    </header>
   );
 };
 
