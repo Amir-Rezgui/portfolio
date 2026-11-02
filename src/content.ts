@@ -358,13 +358,6 @@ export const content: Record<'fr' | 'en', PortfolioContent> = {
           description: "<strong>Ezzayra</strong> — Outil d'aide à la décision agricole propulsé par l'IA : analyse d'imagerie satellite (Sentinel-2), assistant vocal intelligent en dialecte tunisien et détection des maladies des plantes par vision par ordinateur.",
           category: 'Hackathon',
         },
-        {
-          title: 'Veille Open Source & IA',
-          years: '2024 – Présent',
-          role: 'Projets personnels',
-          description: 'Tests et déploiements locaux de LLMs ouverts (Mistral, Ollama) pour créer des utilitaires pour développeurs.',
-          category: 'Innovation',
-        },
       ],
       certificationsLabel: 'Certifications & Formations',
       certificationsItems: [
@@ -648,13 +641,6 @@ export const content: Record<'fr' | 'en', PortfolioContent> = {
           role: 'Team Lead · Finalist',
           description: '<strong>Ezzayra</strong> — AI-powered AgriTech decision tool: satellite imagery analysis (Sentinel-2), Tunisian-dialect intelligent voice assistant, and computer vision plant disease detection.',
           category: 'Hackathon',
-        },
-        {
-          title: 'Open Source & AI R&D',
-          years: '2024 – Present',
-          role: 'Personal Projects',
-          description: 'Testing and deploying local open-weights LLMs (Mistral, Ollama) to build developer utilities.',
-          category: 'Innovation',
         },
       ],
       certificationsLabel: 'Certifications & Training',
