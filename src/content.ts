@@ -345,10 +345,10 @@ export const content: Record<'fr' | 'en', PortfolioContent> = {
       leadershipLabel: 'Engagement & communauté',
       leadershipItems: [
         {
-          title: 'Communauté Étudiante ISI',
+          title: 'Clubs Étudiants ISI',
           years: '2024 – Présent',
-          role: 'Animateur Technique',
-          description: "Organisation d'ateliers React & Node.js et mentorat des étudiants de première année.",
+          role: 'Membre Actif',
+          description: "Membre actif du club <strong>Freeways</strong> (problem solving & algorithmique) et du club <strong>Chess Enthusiasts</strong> à l'ISI.",
           category: 'Communauté',
         },
         {
@@ -636,10 +636,10 @@ export const content: Record<'fr' | 'en', PortfolioContent> = {
       leadershipLabel: 'Leadership & community',
       leadershipItems: [
         {
-          title: 'ISI Student Tech Community',
+          title: 'ISI Student Clubs',
           years: '2024 – Present',
-          role: 'Technical Lead & Mentor',
-          description: 'Organizing React & Node.js workshops and mentoring first-year engineering students.',
+          role: 'Active Member',
+          description: 'Active member of <strong>Freeways</strong> (problem solving club) and <strong>Chess Enthusiasts</strong> club at ISI.',
           category: 'Community',
         },
         {
