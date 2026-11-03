@@ -2,23 +2,23 @@
 @import "tailwindcss";
 
 @theme {
-  /* Light palette (olive / natural) */
-  --color-bg: #F5F5EC;
-  --color-bg-alt: #EBEBDB;
-  --color-surface: #FCFCF6;
-  --color-border: #DCDCC5;
-  --color-ink: #222417;
-  --color-ink-soft: #565941;
-  --color-ink-faint: #6D6F56;
-  --color-accent: #5E6E2A;
-  --color-accent-deep: #465220;
-  --color-accent-2: #A9903A;
-  --color-accent-soft: #E7E8CF;
-  /* Light mode: white text on dark olive background */
+  /* Japanese Editorial Palette (Washi Paper & Sumi Ink with Cinnabar Vermilion Stamp) */
+  --color-bg: #F4F3EE;
+  --color-bg-alt: #EAE8E1;
+  --color-surface: #FAF9F6;
+  --color-border: #D8D5CD;
+  --color-ink: #181A1C;
+  --color-ink-soft: #4E5358;
+  --color-ink-faint: #787C82;
+  --color-accent: #C8402A;
+  --color-accent-deep: #A02E1B;
+  --color-accent-2: #8E6E53;
+  --color-accent-soft: #F5EAE6;
+  /* White text on accent */
   --color-on-accent: #ffffff;
 
-  --shadow-card: 0 1px 2px rgba(50,55,20,.05), 0 10px 30px rgba(60,70,20,.07);
-  --shadow-lg: 0 24px 60px rgba(50,60,20,.16);
+  --shadow-card: 0 1px 3px rgba(24,26,28,.04), 0 10px 30px rgba(24,26,28,.06);
+  --shadow-lg: 0 24px 60px rgba(24,26,28,.12);
 
   --radius-card: 16px;
   --radius-sm: 10px;
@@ -30,40 +30,38 @@
 
 /* Dark mode overrides */
 :root[data-theme="dark"] {
-  --color-bg: #181A12;
-  --color-bg-alt: #202217;
-  --color-surface: #22251A;
-  --color-border: #353823;
-  --color-ink: #EDEEE0;
-  --color-ink-soft: #BCBEA3;
-  --color-ink-faint: #84876C;
-  --color-accent: #A6BA5C;
-  --color-accent-deep: #8CA347;
-  --color-accent-2: #CBB25E;
-  --color-accent-soft: #2C3120;
-  /* Dark mode: dark/black text on light sage background */
-  --color-on-accent: #15180E;
-  --shadow-card: 0 1px 2px rgba(0,0,0,.25), 0 10px 30px rgba(0,0,0,.35);
-  --shadow-lg: 0 24px 60px rgba(0,0,0,.5);
+  --color-bg: #131518;
+  --color-bg-alt: #1A1D21;
+  --color-surface: #1E2227;
+  --color-border: #2D333B;
+  --color-ink: #F0EFEA;
+  --color-ink-soft: #B2B7BF;
+  --color-ink-faint: #727882;
+  --color-accent: #E5533D;
+  --color-accent-deep: #C8402A;
+  --color-accent-2: #D4A373;
+  --color-accent-soft: #2E1A16;
+  --color-on-accent: #ffffff;
+  --shadow-card: 0 1px 3px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.45);
+  --shadow-lg: 0 24px 60px rgba(0,0,0,.6);
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --color-bg: #181A12;
-    --color-bg-alt: #202217;
-    --color-surface: #22251A;
-    --color-border: #353823;
-    --color-ink: #EDEEE0;
-    --color-ink-soft: #BCBEA3;
-    --color-ink-faint: #84876C;
-    --color-accent: #A6BA5C;
-    --color-accent-deep: #8CA347;
-    --color-accent-2: #CBB25E;
-    --color-accent-soft: #2C3120;
-    /* Dark mode: dark/black text on light sage background */
-    --color-on-accent: #15180E;
-    --shadow-card: 0 1px 2px rgba(0,0,0,.25), 0 10px 30px rgba(0,0,0,.35);
-    --shadow-lg: 0 24px 60px rgba(0,0,0,.5);
+    --color-bg: #131518;
+    --color-bg-alt: #1A1D21;
+    --color-surface: #1E2227;
+    --color-border: #2D333B;
+    --color-ink: #F0EFEA;
+    --color-ink-soft: #B2B7BF;
+    --color-ink-faint: #727882;
+    --color-accent: #E5533D;
+    --color-accent-deep: #C8402A;
+    --color-accent-2: #D4A373;
+    --color-accent-soft: #2E1A16;
+    --color-on-accent: #ffffff;
+    --shadow-card: 0 1px 3px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.45);
+    --shadow-lg: 0 24px 60px rgba(0,0,0,.6);
   }
 }
 

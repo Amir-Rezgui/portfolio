@@ -50,7 +50,7 @@ export const Contact = () => {
         <div
           className="rounded-[28px] px-6 py-12 sm:px-12 sm:py-16 text-center text-white relative overflow-hidden reveal"
           style={{
-            background: 'linear-gradient(135deg, #465220 0%, #5E6E2A 100%)',
+            background: 'linear-gradient(135deg, var(--color-accent-deep) 0%, var(--color-accent) 100%)',
             boxShadow: 'var(--shadow-lg)',
           }}
         >
@@ -86,7 +86,7 @@ export const Contact = () => {
                   }`}
                   style={
                     isSolid
-                      ? { backgroundColor: '#ffffff', color: '#465220' }
+                      ? { backgroundColor: '#ffffff', color: 'var(--color-accent-deep)' }
                       : { color: '#ffffff' }
                   }
                 >
@@ -109,20 +109,20 @@ export const Contact = () => {
               <button
                 type="button"
                 onClick={handleCopyEmail}
-                className="inline-flex items-center gap-1 text-[.72rem] font-sans font-semibold px-2.5 py-0.5 rounded-full bg-white text-[#465220] hover:bg-white/90 transition-all cursor-pointer shadow-sm active:scale-95"
+                className="inline-flex items-center gap-1 text-[.72rem] font-sans font-semibold px-2.5 py-0.5 rounded-full bg-white text-[var(--color-accent-deep)] hover:bg-white/90 transition-all cursor-pointer shadow-sm active:scale-95"
                 title={lang === 'fr' ? 'Copier dans le presse-papiers' : 'Copy to clipboard'}
                 aria-label="Copy email address"
               >
                 {copied ? (
                   <>
-                    <svg className="w-3 h-3 text-[#465220]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                    <svg className="w-3 h-3 text-[var(--color-accent-deep)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M20 6L9 17l-5-5" />
                     </svg>
                     <span>{lang === 'fr' ? 'Copié !' : 'Copied!'}</span>
                   </>
                 ) : (
                   <>
-                    <svg className="w-3 h-3 text-[#465220]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <svg className="w-3 h-3 text-[var(--color-accent-deep)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
                       <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" />
                     </svg>
