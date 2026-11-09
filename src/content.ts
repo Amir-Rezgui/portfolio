@@ -226,7 +226,7 @@ export const content: Record<'fr' | 'en', PortfolioContent> = {
               metric: '',
               tech: ['Spring Boot', 'Angular', 'Flutter', 'Camunda', 'Keycloak', 'Dialogflow', 'PostgreSQL'],
               links: [
-                { type: 'github', url: 'https://github.com/Amir-Rezgui/AI-Incident-Reporter', label: 'Code' },
+                { type: 'github', url: 'https://github.com/Amir-Rezgui/emergency-medical-service', label: 'Code' },
               ],
             },
             {
@@ -510,7 +510,7 @@ export const content: Record<'fr' | 'en', PortfolioContent> = {
               metric: '',
               tech: ['Spring Boot', 'Angular', 'Flutter', 'Camunda', 'Keycloak', 'Dialogflow', 'PostgreSQL'],
               links: [
-                { type: 'github', url: 'https://github.com/Amir-Rezgui/AI-Incident-Reporter', label: 'Code' },
+                { type: 'github', url: 'https://github.com/Amir-Rezgui/emergency-medical-service', label: 'Code' },
               ],
             },
             {
