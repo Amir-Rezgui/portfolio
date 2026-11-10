@@ -68,20 +68,34 @@ const Navbar = () => {
             onClick={toggleTheme}
             className="w-10 h-10 flex items-center justify-center rounded-full bg-surface border border-border text-ink cursor-pointer transition-colors duration-200 hover:text-accent hover:border-accent"
             aria-label="Toggle theme"
-            title="Toggle light / dark mode"
+            title={theme === 'dark' ? 'Activer le mode clair' : 'Activer le mode sombre'}
           >
-            <svg
-              className="w-4 h-4"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M12 3v1M12 20v1M4.2 4.2l.7.7M19.1 19.1l.7.7M3 12h1M20 12h1M4.2 19.8l.7-.7M19.1 4.9l.7-.7" />
-              <circle cx="12" cy="12" r="4" />
-            </svg>
+            {theme === 'dark' ? (
+              <svg
+                className="w-4 h-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M12 3v1M12 20v1M4.2 4.2l.7.7M19.1 19.1l.7.7M3 12h1M20 12h1M4.2 19.8l.7-.7M19.1 4.9l.7-.7" />
+                <circle cx="12" cy="12" r="4" />
+              </svg>
+            ) : (
+              <svg
+                className="w-4 h-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+              </svg>
+            )}
           </button>
 
           {/* CV Button */}

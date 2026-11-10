@@ -46,25 +46,6 @@
   --shadow-lg: 0 24px 60px rgba(0,0,0,.6);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --color-bg: #131518;
-    --color-bg-alt: #1A1D21;
-    --color-surface: #1E2227;
-    --color-border: #2D333B;
-    --color-ink: #F0EFEA;
-    --color-ink-soft: #B2B7BF;
-    --color-ink-faint: #727882;
-    --color-accent: #E5533D;
-    --color-accent-deep: #C8402A;
-    --color-accent-2: #D4A373;
-    --color-accent-soft: #2E1A16;
-    --color-on-accent: #ffffff;
-    --shadow-card: 0 1px 3px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.45);
-    --shadow-lg: 0 24px 60px rgba(0,0,0,.6);
-  }
-}
-
 @layer base {
   * { box-sizing: border-box; }
 

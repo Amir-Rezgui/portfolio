@@ -5,27 +5,17 @@ const ThemeContext = createContext();
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => {
     const saved = localStorage.getItem('portfolio-theme');
-    return saved || 'system';
+    return saved === 'dark' ? 'dark' : 'light';
   });
 
   useEffect(() => {
     const root = document.documentElement;
-    if (theme === 'system') {
-      root.removeAttribute('data-theme');
-    } else {
-      root.setAttribute('data-theme', theme);
-    }
+    root.setAttribute('data-theme', theme);
     localStorage.setItem('portfolio-theme', theme);
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme(prev => {
-      if (prev === 'light') return 'dark';
-      if (prev === 'dark') return 'light';
-      // system -> check current and toggle to opposite
-      const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      return isDark ? 'light' : 'dark';
-    });
+    setTheme(prev => (prev === 'dark' ? 'light' : 'dark'));
   };
 
   return (
