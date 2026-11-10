@@ -144,7 +144,7 @@ export interface PortfolioContent {
 export const content: Record<'fr' | 'en', PortfolioContent> = {
   fr: {
     meta: {
-      title: 'Amir Rezgui · Ingénieur Full-Stack & IA',
+      title: 'Amir Rezgui · Élève ingénieur Full-Stack & IA',
       description: "Élève ingénieur à l'ISI (UTM). Je conçois des applications web, mobiles et IA de l'idée à la production. Projets, expérience et contact.",
     },
     nav: {
@@ -162,7 +162,7 @@ export const content: Record<'fr' | 'en', PortfolioContent> = {
     hero: {
       eyebrow: 'Élève ingénieur · Ariana, Tunisie',
       name: { first: 'Amir', last: 'Rezgui' },
-      tagline: "Élève ingénieur en développement logiciel, à la recherche d'un stage de fin d'études (PFE).",
+      tagline: "Élève ingénieur en génie logiciel, à la recherche d'un stage de fin d'études (PFE).",
       paragraph: "Je conçois des applications web, mobiles et IA avec React, TypeScript, Node.js, Spring Boot et Flutter.",
       facts: [
         { key: 'domaine', value: 'IA Générative · Full-Stack' },
@@ -273,31 +273,31 @@ export const content: Record<'fr' | 'en', PortfolioContent> = {
           tags: ['PHP', 'MySQL', 'REST API', 'jQuery', 'VICIdial'],
         },
         {
-          role: "Stage de fin d'études en développement mobile",
+          role: "Stage de fin d'études de licence en développement mobile",
           org: 'Kromberg & Schubert (Kroschu)',
           date: '02/2024 – 06/2024',
           description: "Conception et développement d'une application mobile multiplateforme de gestion des workflows industriels internes.",
           tags: ['Flutter', 'Dart', 'Firebase'],
         },
         {
-          role: 'Cycle Ingénieur en Développement Logiciel',
+          role: 'Cycle ingénieur en génie logiciel',
           org: "Institut Supérieur d'Informatique (ISI) Ariana",
           date: '09/2024 – Présent',
           description: "Formation d'ingénieur en cours (diplôme prévu en 2027).",
           tags: ['Java', 'Spring Boot', 'Python', 'Docker', 'Camunda'],
         },
         {
-          role: 'Licence en Génie Logiciel — Mention Bien',
+          role: "Licence en Sciences de l'Informatique — Mention Très Bien (16/20)",
           org: "Institut Supérieur d'Informatique (ISI) Ariana",
           date: '10/2021 – 06/2024',
-          description: "Diplôme de Licence validé avec mention Bien.",
+          description: "Diplôme de Licence validé avec mention Très Bien (16/20).",
           tags: ['Génie Logiciel', 'Algorithmique', 'Bases de données'],
         },
         {
-          role: 'Baccalauréat Sciences Informatiques — Mention Très Bien',
+          role: 'Baccalauréat Sciences Informatiques — Mention Très Bien (17/20)',
           org: 'Lycée Khayreddine Ariana',
           date: '09/2020 – 06/2021',
-          description: "Baccalauréat obtenu avec mention Très Bien.",
+          description: "Baccalauréat obtenu avec mention Très Bien (17/20).",
           tags: [],
         },
       ],
@@ -428,7 +428,7 @@ export const content: Record<'fr' | 'en', PortfolioContent> = {
   },
   en: {
     meta: {
-      title: 'Amir Rezgui · Full-Stack & AI Engineer',
+      title: 'Amir Rezgui · Full-Stack & AI Engineering Student',
       description: 'Software engineering student at ISI (UTM). I build web, mobile, and AI applications from idea to production. Projects, experience, and contact.',
     },
     nav: {
@@ -446,7 +446,7 @@ export const content: Record<'fr' | 'en', PortfolioContent> = {
     hero: {
       eyebrow: 'Software Engineer · Ariana, Tunisia',
       name: { first: 'Amir', last: 'Rezgui' },
-      tagline: 'Software engineering student, seeking a final-year internship (PFE).',
+      tagline: 'Software engineering student (Génie Logiciel), seeking a final-year internship (PFE).',
       paragraph: 'I build web, mobile, and AI applications with React, TypeScript, Node.js, Spring Boot, and Flutter.',
       facts: [
         { key: 'focus', value: 'Generative AI · Full-Stack' },
@@ -557,31 +557,31 @@ export const content: Record<'fr' | 'en', PortfolioContent> = {
           tags: ['PHP', 'MySQL', 'REST API', 'jQuery', 'VICIdial'],
         },
         {
-          role: 'Final-Year Mobile Development Internship',
+          role: 'Final-Year Bachelor Mobile Development Internship',
           org: 'Kromberg & Schubert (Kroschu)',
           date: '02/2024 – 06/2024',
           description: 'Designed and developed a cross-platform mobile application for managing internal manufacturing workflows.',
           tags: ['Flutter', 'Dart', 'Firebase'],
         },
         {
-          role: 'Software Engineering Degree (Cycle Ingénieur)',
+          role: 'Software Engineering Degree (Cycle ingénieur en génie logiciel)',
           org: 'Higher Institute of Computer Science (ISI, UTM)',
           date: '09/2024 – Present',
           description: 'Software engineering degree program in progress (graduating 2027).',
           tags: ['Java', 'Spring Boot', 'Python', 'Docker', 'Camunda'],
         },
         {
-          role: "Bachelor's Degree in Software Engineering — Honors (Bien)",
+          role: "Bachelor's Degree in Computer Science — High Honors (Très Bien, 16/20)",
           org: 'Higher Institute of Computer Science (ISI, UTM)',
           date: '10/2021 – 06/2024',
-          description: "Graduated with Honors (Mention Bien).",
+          description: "Graduated with High Honors (Mention Très Bien, 16/20).",
           tags: ['Software Engineering', 'Algorithms', 'Databases'],
         },
         {
-          role: 'Baccalaureate in Computer Science — High Honors (Très Bien)',
+          role: 'Baccalaureate in Computer Science — High Honors (Très Bien, 17/20)',
           org: 'Lycée Khayreddine Ariana',
           date: '09/2020 – 06/2021',
-          description: 'Graduated with High Honors (Mention Très Bien).',
+          description: 'Graduated with High Honors (Mention Très Bien, 17/20).',
           tags: [],
         },
       ],
